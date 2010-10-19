@@ -1,0 +1,173 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-05-19 19:36+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.1.1\n"
+
+#. Tinyproxy
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:1
+msgid "Tinyproxy"
+msgstr ""
+
+#. Tinyproxy is a small and fast non-caching HTTP(S)-Proxy
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:2
+msgid "Tinyproxy is a small and fast non-caching HTTP(S)-Proxy"
+msgstr ""
+
+#. Allow access from
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:3
+msgid "Allow access from"
+msgstr ""
+
+#. Allowed headers for anonymous proxy
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:4
+msgid "Allowed headers for anonymous proxy"
+msgstr ""
+
+#. Bind outgoing traffic to address
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:5
+msgid "Bind outgoing traffic to address"
+msgstr ""
+
+#. Ports allowed for CONNECT method
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:6
+msgid "Ports allowed for CONNECT method"
+msgstr ""
+
+#. 0 = disabled, empty = all
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:7
+msgid "0 = disabled, empty = all"
+msgstr ""
+
+#. Error document
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:8
+msgid "Error document"
+msgstr ""
+
+#. Filter list
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:9
+msgid "Filter list"
+msgstr ""
+
+#. Case sensitive filters
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:10
+msgid "Case sensitive filters"
+msgstr ""
+
+#. Filter list is a whitelist
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:11
+msgid "Filter list is a whitelist"
+msgstr ""
+
+#. Extended regular expression filters
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:12
+msgid "Extended regular expression filters"
+msgstr ""
+
+#. Filter URLs instead of domains
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:13
+msgid "Filter URLs instead of domains"
+msgstr ""
+
+#. Listen on address
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:14
+msgid "Listen on address"
+msgstr ""
+
+#. Logfile
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:15
+msgid "Logfile"
+msgstr ""
+
+#. Log level
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:16
+msgid "Log level"
+msgstr ""
+
+#. Maximum number of clients
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:17
+msgid "Maximum number of clients"
+msgstr ""
+
+#. Maximum requests per thread
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:18
+msgid "Maximum requests per thread"
+msgstr ""
+
+#. Max. spare servers
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:19
+msgid "Max. spare servers"
+msgstr ""
+
+#. Min. spare servers
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:20
+msgid "Min. spare servers"
+msgstr ""
+
+#. Spare servers to start with
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:21
+msgid "Spare servers to start with"
+msgstr ""
+
+#. Statistic document
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:22
+msgid "Statistic document"
+msgstr ""
+
+#. Write to syslog
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:23
+msgid "Write to syslog"
+msgstr ""
+
+#. Connection Timeout
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:24
+msgid "Connection Timeout"
+msgstr ""
+
+#. Value of Via-Header
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:25
+msgid "Value of Via-Header"
+msgstr ""
+
+#. Include client IP
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:26
+msgid "Include client IP"
+msgstr ""
+
+#. Via proxy
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:27
+msgid "Via proxy"
+msgstr ""
+
+#. Reject access
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:28
+msgid "Reject access"
+msgstr ""
+
+#. Upstream Control
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:29
+msgid "Upstream Control"
+msgstr ""
+
+#. Target host
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:30
+msgid "Target host"
+msgstr ""
+
+#. Type
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:31
+msgid "Type"
+msgstr ""
+
+#. Upstream Proxy
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:32
+msgid "Upstream Proxy"
+msgstr ""

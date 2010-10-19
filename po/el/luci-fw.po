@@ -1,0 +1,256 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-30 17:00+0200\n"
+"PO-Revision-Date: 2010-01-08 14:13+0100\n"
+"Last-Translator: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 1.1.0\n"
+
+msgid "Firewall"
+msgstr "Τείχος προστασίας"
+
+msgid ""
+"The firewall creates zones over your network interfaces to control network "
+"traffic flow."
+msgstr ""
+"Το τείχος προστασίας δημιουργεί ζώνες πάνω στις διεπαφές δικτύου για να "
+"ελέγχει την δικτυακή κίνηση."
+
+#, fuzzy
+msgid "Enable SYN-flood protection"
+msgstr "Προστασία SYN-flood"
+
+msgid "Drop invalid packets"
+msgstr "Αγνόηση μη-έγκυρων πακετών"
+
+msgid "Input"
+msgstr "Είσοδος"
+
+msgid "Output"
+msgstr "Έξοδος"
+
+msgid "Forward"
+msgstr ""
+
+msgid "reject"
+msgstr "απόρριψη"
+
+msgid "drop"
+msgstr "αγνόηση"
+
+msgid "accept"
+msgstr "αποδοχή"
+
+msgid "Zones"
+msgstr "Ζώνες"
+
+msgid "Name"
+msgstr ""
+
+msgid "Masquerading"
+msgstr ""
+
+#, fuzzy
+msgid "MSS clamping"
+msgstr "Περιορισμός MSS"
+
+#, fuzzy
+msgid "Network"
+msgstr "Δίκτυα"
+
+msgid "Traffic Control"
+msgstr "Έλεγχος Κίνησης"
+
+msgid "Zone-to-Zone traffic"
+msgstr "Κίνηση Ζώνης-προς-Ζώνη"
+
+#, fuzzy
+msgid ""
+"Here you can specify which network traffic is allowed to flow between "
+"network zones. Only new connections will be matched.  Packets belonging to "
+"already open connections are automatically allowed to pass the firewall. If "
+"you experience occasional connection problems try enabling MSS Clamping "
+"otherwise disable it for performance reasons."
+msgstr ""
+"Εδώ μπορείτε να ορίσετε τι δικτυακή κίνηση επιτρέπεται μεταξύ δικτυακών "
+"ζωνών. Θα εφαρμόζεται μόνο σε νέες συνδέσεις. Πακέτα που ανήκουν σε ήδη "
+"ανοιχτές συνδέσεις θα περνάνε αυτόματα το τείχος προστασίας. Αν "
+"αντιμετωπίζεται σποραδικά προβλήματα με τη σύνδεσή σας, δοκιμάστε να "
+"ενεργοποιήσετε τον Περιορισμό MSS, αλλιώς απενεργοποιήστε το για μεγαλύτερη "
+"απόδοση."
+
+msgid "Source"
+msgstr "Πηγή"
+
+msgid "Destination"
+msgstr "Προορισμός"
+
+msgid "Rules"
+msgstr ""
+
+msgid "Protocol"
+msgstr ""
+
+msgid "Device"
+msgstr ""
+
+msgid "Action"
+msgstr "Ενέργεια"
+
+msgid "Traffic Redirection"
+msgstr "Ανακατεύθυνση Κίνησης"
+
+msgid ""
+"Traffic redirection allows you to change the destination address of "
+"forwarded packets."
+msgstr ""
+"Η ανακατεύθυνση κίνησης σας επιτρέπει να αλλάξετε την διεύθυνση προορισμού "
+"των προωθημένων πακέτων."
+
+msgid "(optional)"
+msgstr ""
+
+msgid "Zone"
+msgstr "Ζώνη"
+
+msgid "Source port"
+msgstr "Θύρα πηγής"
+
+#, fuzzy
+msgid "Destination IP"
+msgstr "Προορισμός"
+
+#, fuzzy
+msgid "IP address"
+msgstr "Διεύθυνση IP"
+
+msgid "Destination port"
+msgstr "Θύρα προορισμού"
+
+msgid "Advanced Rules"
+msgstr "Προχωρημένοι Κανόνες"
+
+msgid ""
+"Advanced rules let you customize the firewall to your needs. Only new "
+"connections will be matched. Packets belonging to already open connections "
+"are automatically allowed to pass the firewall."
+msgstr ""
+"Οι προχωρημένοι κανόνες σας επιτρέπουν να προσαρμόσετε το τείχος προστασίας "
+"στις δικές σας ανάγκες. Οι κανόνες θα εφαρμόζονται μόνο στις νέες συνδέσεις. "
+"Πακέτα που ανήκουν σε ήδη ανοιχτές συνδέσεις, θα περνάνε αυτόματα το τείχος "
+"προστασίας."
+
+msgid "Overview"
+msgstr ""
+
+#, fuzzy
+msgid "Source zone"
+msgstr "Θύρα πηγής"
+
+#, fuzzy
+msgid "Destination zone"
+msgstr "Προορισμός"
+
+msgid "any"
+msgstr ""
+
+#, fuzzy
+msgid "Source address"
+msgstr "Διεύθυνση MAC πηγής"
+
+msgid "Destination address"
+msgstr "Διεύθυνση προορισμού"
+
+#, fuzzy
+msgid "Source MAC-address"
+msgstr "Διεύθυνση MAC πηγής"
+
+#, fuzzy
+msgid "Source IP address"
+msgstr "Διεύθυνση MAC πηγής"
+
+msgid ""
+"Match incoming traffic originating from the given source port or port range "
+"on the client host"
+msgstr ""
+
+msgid "External port"
+msgstr "Εξωτερική θύρα"
+
+msgid ""
+"Match incoming traffic directed at the given destination port or port range "
+"on this host"
+msgstr ""
+
+#, fuzzy
+msgid "Internal IP address"
+msgstr "Εσωτερική διεύθυνση"
+
+msgid "Redirect matched incoming traffic to the specified internal host"
+msgstr ""
+
+msgid "Internal port (optional)"
+msgstr "Εσωτερική θύρα (προαιρετικό)"
+
+msgid ""
+"Redirect matched incoming traffic to the given port on the internal host"
+msgstr ""
+
+msgid "Port forwarding"
+msgstr "Προώθηση θυρών"
+
+msgid ""
+"Port forwarding allows to provide network services in the internal network "
+"to an external network."
+msgstr ""
+"Η προώθηση θυρών επιτρέπει σε υπηρεσίες δικτύου που λειτουργούν μέσα σε ένα "
+"εσωτερικό δίκτυο, να γίνονται διαθέσιμες και σε ένα εξωτερικό."
+
+#, fuzzy
+msgid "Internal port"
+msgstr "Εξωτερική θύρα"
+
+#~ msgid "Custom forwarding"
+#~ msgstr "Προσαρμοσμένη προώθηση"
+
+#~ msgid "Input Zone"
+#~ msgstr "Ζώνη Εισόδου"
+
+#~ msgid "Output Zone"
+#~ msgstr "Ζώνη Εξόδου"
+
+#~ msgid "External Zone"
+#~ msgstr "Εξωτερική Ζώνη"
+
+#~ msgid "Source MAC"
+#~ msgstr "MAC πηγής"
+
+#~ msgid "Defaults"
+#~ msgstr "Προκαθορισμένα"
+
+#~ msgid ""
+#~ "These are the default settings that are used if no other rules match."
+#~ msgstr ""
+#~ "Αυτές είναι οι προκαθορισμένες ρυθμίσεις που χρησιμοποιούνται αν δεν "
+#~ "υπάρχει κάποιος άλλος κανόνας που ταιριάζει."
+
+#~ msgid ""
+#~ "Zones part the network interfaces into certain isolated areas to separate "
+#~ "network traffic. One or more networks can belong to a zone. The MASQ-flag "
+#~ "enables NAT masquerading for all outgoing traffic on this zone."
+#~ msgstr ""
+#~ "Οι ζώνες χωρίζουν τις δικτυακές διεπαφές σε απομονωμένες περιοχές ώστε να "
+#~ "διαχωρίζεται η δικτυακή κίνηση. Σε μία ζώνη μπορούν να ανήκουν ένα ή "
+#~ "περισσότερα δίκτυα. Η σημαία MASQ ενεργοποιεί NAT masquerading για όλη "
+#~ "την εξερχόμενη κίνηση της ζώνης."
+
+#~ msgid "MASQ"
+#~ msgstr "MASQ"
+
+#~ msgid "contained networks"
+#~ msgstr "δίκτυα που περιέχονται"

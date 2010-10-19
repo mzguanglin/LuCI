@@ -1,0 +1,256 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-30 17:00+0200\n"
+"PO-Revision-Date: 2009-07-20 07:14+0200\n"
+"Last-Translator: Guillermo Javier Nardoni <guillermo@geryon.com.ar>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 1.1.0\n"
+
+msgid "Firewall"
+msgstr "Corta fuego"
+
+msgid ""
+"The firewall creates zones over your network interfaces to control network "
+"traffic flow."
+msgstr ""
+"El corta fuego crea zonas sobre sus interfaces de red para controlar el "
+"flujo del tráfico."
+
+#, fuzzy
+msgid "Enable SYN-flood protection"
+msgstr "Protección por exceso de SYN"
+
+msgid "Drop invalid packets"
+msgstr "Rechazar paquetes inválidos"
+
+msgid "Input"
+msgstr "Entrada"
+
+msgid "Output"
+msgstr "Salida"
+
+msgid "Forward"
+msgstr ""
+
+msgid "reject"
+msgstr "desechar"
+
+msgid "drop"
+msgstr "rechazar"
+
+msgid "accept"
+msgstr "aceptar"
+
+msgid "Zones"
+msgstr "Zonas"
+
+msgid "Name"
+msgstr ""
+
+msgid "Masquerading"
+msgstr ""
+
+#, fuzzy
+msgid "MSS clamping"
+msgstr "MSS Clamping"
+
+#, fuzzy
+msgid "Network"
+msgstr "Redes"
+
+msgid "Traffic Control"
+msgstr "Control de tráfico"
+
+msgid "Zone-to-Zone traffic"
+msgstr "Tráfico Zona-a-Zona"
+
+#, fuzzy
+msgid ""
+"Here you can specify which network traffic is allowed to flow between "
+"network zones. Only new connections will be matched.  Packets belonging to "
+"already open connections are automatically allowed to pass the firewall. If "
+"you experience occasional connection problems try enabling MSS Clamping "
+"otherwise disable it for performance reasons."
+msgstr ""
+"Aquí puede especificar qué tráfico de red is permitido, discho tráfico "
+"fluirá entre las zonas de red definidas. Sólamente las nuevas conexiones "
+"serán aplicadas por las reglas. Los paquetes pertenecientes a conexiones ya "
+"abierta se les permitirá el paso sobre el corta fuego. Si experimenta "
+"ocacionalmente problemas de conexión, intente activar MSS Clamping de otra "
+"forma, deshabilitelo para mejorar considerablemente la performance."
+
+msgid "Source"
+msgstr "Origen"
+
+msgid "Destination"
+msgstr "Destino"
+
+msgid "Rules"
+msgstr ""
+
+msgid "Protocol"
+msgstr ""
+
+msgid "Device"
+msgstr ""
+
+msgid "Action"
+msgstr "Acción"
+
+msgid "Traffic Redirection"
+msgstr "Redirección de tráfico"
+
+msgid ""
+"Traffic redirection allows you to change the destination address of "
+"forwarded packets."
+msgstr ""
+"La redirección de tráfico permite cambiar la dirección de destino de los "
+"paquetes reenviados."
+
+msgid "(optional)"
+msgstr ""
+
+msgid "Zone"
+msgstr "Zona"
+
+msgid "Source port"
+msgstr "Puerto de origen"
+
+#, fuzzy
+msgid "Destination IP"
+msgstr "Destino"
+
+#, fuzzy
+msgid "IP address"
+msgstr "Dirección IP"
+
+msgid "Destination port"
+msgstr "Puerto de destino"
+
+msgid "Advanced Rules"
+msgstr "Reglas avanzadas"
+
+msgid ""
+"Advanced rules let you customize the firewall to your needs. Only new "
+"connections will be matched. Packets belonging to already open connections "
+"are automatically allowed to pass the firewall."
+msgstr ""
+"Las reglas avanzadas le permite personalizar el corta fuego según sus "
+"necesidades. Sólamente las nuevas conexiones serán afectadas por las reglas. "
+"Los paquetes pertenecientes a conexiones ya abierta, se les permite el libre "
+"paso por el corta fuego."
+
+msgid "Overview"
+msgstr ""
+
+#, fuzzy
+msgid "Source zone"
+msgstr "Puerto de origen"
+
+#, fuzzy
+msgid "Destination zone"
+msgstr "Destino"
+
+msgid "any"
+msgstr ""
+
+#, fuzzy
+msgid "Source address"
+msgstr "Dirección MAC de origen"
+
+msgid "Destination address"
+msgstr "Dirección de destino"
+
+#, fuzzy
+msgid "Source MAC-address"
+msgstr "Dirección MAC de origen"
+
+#, fuzzy
+msgid "Source IP address"
+msgstr "Dirección MAC de origen"
+
+msgid ""
+"Match incoming traffic originating from the given source port or port range "
+"on the client host"
+msgstr ""
+
+msgid "External port"
+msgstr "Puerto externo"
+
+msgid ""
+"Match incoming traffic directed at the given destination port or port range "
+"on this host"
+msgstr ""
+
+#, fuzzy
+msgid "Internal IP address"
+msgstr "Dirección interna"
+
+msgid "Redirect matched incoming traffic to the specified internal host"
+msgstr ""
+
+msgid "Internal port (optional)"
+msgstr "Puerto interno (opcional)"
+
+msgid ""
+"Redirect matched incoming traffic to the given port on the internal host"
+msgstr ""
+
+msgid "Port forwarding"
+msgstr "Reenvío de puerto"
+
+msgid ""
+"Port forwarding allows to provide network services in the internal network "
+"to an external network."
+msgstr ""
+"El reenvío de puerto permite proveer servicios de red en una red interna a "
+"una red externa (por ejemplo Internet)"
+
+#, fuzzy
+msgid "Internal port"
+msgstr "Puerto externo"
+
+#~ msgid "Custom forwarding"
+#~ msgstr "Renvío personalizado"
+
+#~ msgid "Input Zone"
+#~ msgstr "Zona de entrada"
+
+#~ msgid "Output Zone"
+#~ msgstr "Zona de salida"
+
+#~ msgid "External Zone"
+#~ msgstr "Zona Externa"
+
+#~ msgid "Source MAC"
+#~ msgstr "MAC de Origen"
+
+#~ msgid "Defaults"
+#~ msgstr "De fábrica"
+
+#~ msgid ""
+#~ "These are the default settings that are used if no other rules match."
+#~ msgstr ""
+#~ "Estos son los valores por defecto que son usados si no hay otra regla a "
+#~ "aplicar."
+
+#~ msgid ""
+#~ "Zones part the network interfaces into certain isolated areas to separate "
+#~ "network traffic. One or more networks can belong to a zone. The MASQ-flag "
+#~ "enables NAT masquerading for all outgoing traffic on this zone."
+#~ msgstr ""
+#~ "Las zonas dividen las interfaces de red en varias partes aisladas para "
+#~ "separar el tráfico de red. Una o mas redes pueden pertenecer a una zona. "
+#~ "La bandera MASQ activa el enmascaramiento NAT para todo el tráfico "
+#~ "saliente sobre esa zona."
+
+#~ msgid "MASQ"
+#~ msgstr "MASQ"
+
+#~ msgid "contained networks"
+#~ msgstr "redes contenidas"

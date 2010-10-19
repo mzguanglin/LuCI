@@ -1,0 +1,263 @@
+#  freifunk.pot
+#  generated from ./modules/freifunk/luasrc/i18n/freifunk.en.lua
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-16 06:58+0200\n"
+"PO-Revision-Date: 2009-08-15 11:56+0200\n"
+"Last-Translator: Stefan Pirwitz <i18n@freifunk-bno.de>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 1.1.0\n"
+
+#. Hello and welcome in the network of
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:1
+msgid "Hello and welcome in the network of"
+msgstr "Xin chào và chào mừng gia nhập mạng lưới của"
+
+#. We are an initiative to establish a free, independent and open wireless mesh network.
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:2
+msgid ""
+"We are an initiative to establish a free, independent and open wireless mesh "
+"network."
+msgstr "Chúng tôi là phát triển mạng lưới nguồn mở không dây đầu tiên"
+
+#. This is the access point
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:3
+msgid "This is the access point"
+msgstr "Đây là điểm truy cập "
+
+#. It is operated by
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:4
+msgid "It is operated by"
+msgstr "Nó hoạt động bởi "
+
+#. You can find further information about the global Freifunk initiative at
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:5
+msgid ""
+"You can find further information about the global Freifunk initiative at"
+msgstr "Bạn có thể tìm thấy thông tin về Freifunk toàn cầu tại "
+
+#. If you are interested in our project then contact the local community
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:6
+msgid "If you are interested in our project then contact the local community"
+msgstr ""
+"Nếu bạn quan tâm đến đề án của chúng tôi, hãy liên hệ cộng đồng địa phương"
+
+#. Internet access depends on technical and organisational conditions and may or may not work for you.
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:7
+msgid ""
+"Internet access depends on technical and organisational conditions and may "
+"or may not work for you."
+msgstr ""
+"Truy cập Internet phù thuộc vào kỹ thật và điều kiện tổ chức và có thể hoạt "
+"động hoặc không hoạt động cho bạn"
+
+#. Location
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:8
+msgid "Location"
+msgstr "Địa chỉ"
+
+#. E-Mail
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:9
+msgid "E-Mail"
+msgstr "E-mail"
+
+#. You really should provide your address here!
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:10
+msgid "You really should provide your address here!"
+msgstr "Bạn nên cung cấp địa chỉ ở đây!"
+
+#. Nickname
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:11
+msgid "Nickname"
+msgstr "Tên"
+
+#. Realname
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:12
+msgid "Realname"
+msgstr "Tên thật "
+
+#. Node
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:13
+msgid "Node"
+msgstr "Node"
+
+#. Notice
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:14
+msgid "Notice"
+msgstr "Chú ý"
+
+#. Phone
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:15
+msgid "Phone"
+msgstr "Điện thoại"
+
+#. Memory
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:16
+msgid "Memory"
+msgstr "Bộ nhớ"
+
+#. Free
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:17
+msgid "Free"
+msgstr "Miễn phí"
+
+#. Buffers
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:18
+msgid "Buffers"
+msgstr "Buffers"
+
+#. Cached
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:19
+msgid "Cached"
+msgstr "Cached"
+
+#. Total
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:20
+msgid "Total"
+msgstr "Tổng cộng "
+
+#. Coordinates
+#: modules/freifunk/luasrc/i18n/freifunk.en.lua:21
+msgid "Coordinates"
+msgstr "Tọa độ"
+
+#. Client-Splash
+msgid "Client-Splash"
+msgstr "Client-Splash"
+
+#. Active Clients
+msgid "Active Clients"
+msgstr "Đối tượng đang tham gia"
+
+#. Hostname
+msgid "Hostname"
+msgstr "Hostname"
+
+#. IP Address
+msgid "IP Address"
+msgstr "Địa chỉ IP"
+
+#. MAC Address
+msgid "MAC Address"
+msgstr "Địa chỉ MAC"
+
+#. Time remaining
+msgid "Time remaining"
+msgstr "Thời gian còn lại"
+
+#. Traffic (in/out)
+msgid "Traffic (down/up)"
+msgstr "Outgoing traffic"
+
+#. Policy
+msgid "Policy"
+msgstr "Chính sách"
+
+#. unknown
+msgid "unknown"
+msgstr "Không biết"
+
+#. expired
+msgid "expired"
+msgstr "Hết hạn"
+
+#. whitelisted
+msgid "whitelisted"
+msgstr "danh sách trắng"
+
+#. splashed
+msgid "splashed"
+msgstr "splashed"
+
+#. blacklisted
+msgid "blacklisted"
+msgstr "danh sách đen"
+
+#. temporarily blocked
+msgid "temporarily blocked"
+msgstr "hiện tại chặng"
+
+#. No clients connected
+msgid "No clients connected"
+msgstr "Không đối tượng kết nối"
+
+#. P2P-Block
+msgid "P2P-Block"
+msgstr "P2P-Block"
+
+#. P2P-Block is a greylisting mechanism to block various peer-to-peer protocols for non-whitelisted clients.
+msgid ""
+"P2P-Block is a greylisting mechanism to block various peer-to-peer protocols "
+"for non-whitelisted clients."
+msgstr ""
+"P2P-Block là một cơ chế greylisting để chặn các peer-to-peer protocols cho "
+"khách hàng không nằm trên whitelisted."
+
+#. Enable P2P-Block
+msgid "Enable P2P-Block"
+msgstr "Kích hoạt P2P-Block"
+
+#. Portrange
+msgid "Portrange"
+msgstr "Portrange"
+
+#. Block Time
+msgid "Block Time"
+msgstr "Thời gian Block"
+
+#. seconds
+msgid "seconds"
+msgstr "giây"
+
+#. Whitelisted IPs
+msgid "Whitelisted IPs"
+msgstr "Whitelisted IPs"
+
+#. Layer7-Protokolle
+msgid "Layer7-Protocols"
+msgstr "Layer7-protocols"
+
+#. IP-P2P
+msgid "IP-P2P"
+msgstr "IP-P2P"
+
+#. Freifunk Remote Update
+msgid "Freifunk Remote Update"
+msgstr "Freifunk cập nhật từ xa"
+
+#. Check for new firmware versions and perform automatic updates.
+msgid "Check for new firmware versions and perform automatic updates."
+msgstr "Kiểm tra  các phiên bản phần cứng mới và thực hiện tự động cập nhật."
+
+#. Update available!
+msgid "Update available!"
+msgstr "Cập nhật sẵn có!"
+
+#. The installed firmware is the most recent version.
+msgid "The installed firmware is the most recent version."
+msgstr "Phần cứng được cài đặt là phiên bản mới nhất."
+
+#. Start Upgrade
+msgid "Start Upgrade"
+msgstr "Bắt đầu cập nhật "
+
+#. Update Settings
+msgid "Update Settings"
+msgstr "Cập nhật cài đặt"
+
+#. Keep configuration
+msgid "Keep configuration"
+msgstr "Giữ cấu hình"
+
+#. Verify downloaded images
+msgid "Verify downloaded images"
+msgstr "Xác minh hình ảnh đã tải"
+
+#. Confirm Upgrade
+msgid "ff_remote_update_confirm"
+msgstr "Xác nhận nâng cấp"

@@ -1,0 +1,174 @@
+#  tinyproxy.pot
+#  generated from ./applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-16 06:58+0200\n"
+"PO-Revision-Date: 2009-08-13 03:36+0200\n"
+"Last-Translator: Hong Phuc Dang <dhppat@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 1.1.0\n"
+
+#. Tinyproxy
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:1
+msgid "Tinyproxy"
+msgstr "Tinyproxy"
+
+#. Tinyproxy is a small and fast non-caching HTTP(S)-Proxy
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:2
+msgid "Tinyproxy is a small and fast non-caching HTTP(S)-Proxy"
+msgstr "Tinyproxy là một proxy nhỏ và nhanh không-cạc HTTP(S)"
+
+#. Allow access from
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:3
+msgid "Allow access from"
+msgstr "Cho phép truy cập từ"
+
+#. Allowed headers for anonymous proxy
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:4
+msgid "Allowed headers for anonymous proxy"
+msgstr "Cho phép headers cho anonymous proxy"
+
+#. Bind outgoing traffic to address
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:5
+msgid "Bind outgoing traffic to address"
+msgstr "Blind lưu lượng truy cập ngoài vào địa chỉ"
+
+#. Ports allowed for CONNECT method
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:6
+msgid "Ports allowed for CONNECT method"
+msgstr "Cổng cho phép phương pháp CONNECT"
+
+#. 0 = disabled, empty = all
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:7
+msgid "0 = disabled, empty = all"
+msgstr "0=vô hiệu hóa, rỗng = tất cả"
+
+#. Error document
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:8
+msgid "Error document"
+msgstr "Tài liệu lỗi"
+
+#. Filter list
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:9
+msgid "Filter list"
+msgstr "Lọc list"
+
+#. Case sensitive filters
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:10
+msgid "Case sensitive filters"
+msgstr "Lọc phím nhạy cảm"
+
+#. Filter list is a whitelist
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:11
+msgid "Filter list is a whitelist"
+msgstr "Lọc list là một whitelist"
+
+#. Extended regular expression filters
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:12
+msgid "Extended regular expression filters"
+msgstr "Mở rộng các bộ lọc thường xuyên biểu"
+
+#. Filter URLs instead of domains
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:13
+msgid "Filter URLs instead of domains"
+msgstr "Lọc URLs thay domain"
+
+#. Listen on address
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:14
+msgid "Listen on address"
+msgstr "Nghe trên địa chỉ"
+
+#. Logfile
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:15
+msgid "Logfile"
+msgstr "Logfile"
+
+#. Log level
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:16
+msgid "Log level"
+msgstr "Log level"
+
+#. Maximum number of clients
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:17
+msgid "Maximum number of clients"
+msgstr "Tối đa số lượng khách hàng"
+
+#. Maximum requests per thread
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:18
+msgid "Maximum requests per thread"
+msgstr "Tối đa yêu cầu trên thread"
+
+#. Max. spare servers
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:19
+msgid "Max. spare servers"
+msgstr "Tối đa spare servers"
+
+#. Min. spare servers
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:20
+msgid "Min. spare servers"
+msgstr "Tối thiểu spare servers"
+
+#. Spare servers to start with
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:21
+msgid "Spare servers to start with"
+msgstr "Spare servers bắt đầu với"
+
+#. Statistic document
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:22
+msgid "Statistic document"
+msgstr "Tài liệu thống kê"
+
+#. Write to syslog
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:23
+msgid "Write to syslog"
+msgstr "viết tới syslog"
+
+#. Connection Timeout
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:24
+msgid "Connection Timeout"
+msgstr "Kết nối hết hiệu lực"
+
+#. Value of Via-Header
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:25
+msgid "Value of Via-Header"
+msgstr "Giá trị của Via-Header"
+
+#. Include client IP
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:26
+msgid "Include client IP"
+msgstr "Bao gồm IP của khách hàng"
+
+#. Via proxy
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:27
+msgid "Via proxy"
+msgstr "Via proxy"
+
+#. Reject access
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:28
+msgid "Reject access"
+msgstr "Từ chối truy cập "
+
+#. Upstream Control
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:29
+msgid "Upstream Control"
+msgstr "Điều khiển Upstream "
+
+#. Target host
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:30
+msgid "Target host"
+msgstr "Host mục tiêu"
+
+#. Type
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:31
+msgid "Type"
+msgstr "Loại "
+
+#. Upstream Proxy
+#: applications/luci-tinyproxy/luasrc/i18n/tinyproxy.en.lua:32
+msgid "Upstream Proxy"
+msgstr "Upstream Proxy"
