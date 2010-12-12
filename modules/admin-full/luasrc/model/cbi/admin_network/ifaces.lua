@@ -31,6 +31,7 @@ local has_pppoa  = fs.glob("/usr/lib/pppd/*/pppoatm.so")()
 local has_ipv6   = fs.access("/proc/net/ipv6_route")
 local has_6in4   = fs.access("/lib/network/6in4.sh")
 local has_6to4   = fs.access("/lib/network/6to4.sh")
+local has_8021x  = fs.access("/usr/bin/EapolPapClient")
 
 m = Map("network", translate("Interfaces") .. " - " .. arg[1]:upper(), translate("On this page you can configure the network interfaces. You can bridge several interfaces by ticking the \"bridge interfaces\" field and enter the names of several network interfaces separated by spaces. You can also use <abbr title=\"Virtual Local Area Network\">VLAN</abbr> notation <samp>INTERFACE.VLANNR</samp> (<abbr title=\"for example\">e.g.</abbr>: <samp>eth0.1</samp>)."))
 m:chain("wireless")
@@ -86,6 +87,7 @@ if has_3g    then p:value("3g",    "UMTS/3G") end
 if has_pptp  then p:value("pptp",  "PPTP")    end
 if has_6in4  then p:value("6in4",  "6in4")    end
 if has_6to4  then p:value("6to4",  "6to4")    end
+if has_8021x then p:value("8021xdhcp", "802.1X+DHCP") end
 p:value("none", translate("none"))
 
 if not ( has_pppd and has_pppoe and has_pppoa and has_3g and has_pptp ) then
@@ -314,7 +316,7 @@ if has_6in4 then
 	tunid:depends("proto", "6in4")
 end
 
-if has_pppd or has_pppoe or has_pppoa or has_3g or has_pptp or has_6in4 then
+if has_pppd or has_pppoe or has_pppoa or has_3g or has_pptp or has_6in4 or has_8021x then
 	user = s:taboption("general", Value, "username", translate("Username"))
 	user.rmempty = true
 	user:depends("proto", "pptp")
@@ -323,6 +325,7 @@ if has_pppd or has_pppoe or has_pppoa or has_3g or has_pptp or has_6in4 then
 	user:depends("proto", "ppp")
 	user:depends("proto", "3g")
 	user:depends("proto", "6in4")
+	user:depends("proto", "8021xdhcp")
 
 	pass = s:taboption("general", Value, "password", translate("Password"))
 	pass.rmempty = true
@@ -333,6 +336,7 @@ if has_pppd or has_pppoe or has_pppoa or has_3g or has_pptp or has_6in4 then
 	pass:depends("proto", "ppp")
 	pass:depends("proto", "3g")
 	pass:depends("proto", "6in4")
+	pass:depends("proto", "8021xdhcp")
 end
 
 if has_pppd or has_pppoe or has_pppoa or has_3g or has_pptp then
