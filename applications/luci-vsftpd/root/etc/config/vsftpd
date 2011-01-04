@@ -1,0 +1,13 @@
+
+config 'vsftpd' 'config'
+	option 'homedir' '/mnt/ftp'
+	option 'welcomeword' 'Welcome to XRouter Easy-FTP!'
+
+config 'vsftpd' 'security'
+	option 'downloadable' '1'
+	option 'uploadable' '0'
+
+config 'vsftpd' 'performance'
+	option 'maxspeed' '512000'
+	option 'maxclient' '5'
+
