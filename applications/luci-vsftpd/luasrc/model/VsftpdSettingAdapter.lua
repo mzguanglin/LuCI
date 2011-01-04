@@ -46,10 +46,8 @@ end
 
 --- Write configurations to vsftpd such as /etc/vsftpd.conf
 function VsftpdSettingAdapter:writeToVsftpdConfig()
-	io.output("/tmp/luci.write.txt")
 	self:loadOptionsFromUciConfigFile();
 	self:filterSpecialCharacters();
-	io.write(string.format("sed -i -e '/anon_root/s/=.*/=%s/g' -e '/local_root/s/=.*/=%s/g' -e '/ftpd_banner/s/=.*/=%s/g' -e '/anonymous_enable/s/=.*/=%s/g' -e '/anon_upload_enable/s/=.*/=%s/g' -e '/anon_max_rate/s/=.*/=%s/g' -e '/local_max_rate/s/=.*/=%s/g' -e '/max_clients/s/=.*/=%s/g' %s", self.homedir, self.homedir, self.welcomeword, self.downloadable, self.uploadable, self.maxspeed, self.maxspeed, self.maxclient, self.vsftpConfigPath));
 	os.execute(string.format("sed -i -e '/anon_root/s/=.*/=%s/g' -e '/local_root/s/=.*/=%s/g' -e '/ftpd_banner/s/=.*/=%s/g' -e '/anonymous_enable/s/=.*/=%s/g' -e '/anon_upload_enable/s/=.*/=%s/g' -e '/anon_max_rate/s/=.*/=%s/g' -e '/local_max_rate/s/=.*/=%s/g' -e '/max_clients/s/=.*/=%s/g' %s", self.homedir, self.homedir, self.welcomeword, self.downloadable, self.uploadable, self.maxspeed, self.maxspeed, self.maxclient, self.vsftpConfigPath));
 end
 
