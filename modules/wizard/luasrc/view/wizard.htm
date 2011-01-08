@@ -1,0 +1,353 @@
+<%#
+LuCI - Lua Configuration Interface
+Copyright 2008 Steven Barth <steven@midlink.org>
+Copyright 2008-2009 Jo-Philipp Wich <xm@subsignal.org>
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+	http://www.apache.org/licenses/LICENSE-2.0
+
+$Id$
+
+-%>
+
+<%+header%>
+
+<% math.randomseed( os.time() ) %>
+<script type="text/JavaScript" language="JavaScript">
+function checkStep1(){
+	if ( document.getElementById("cbid.wizard.1.username").value=="" )
+	{
+		alert("<%:Please input the user name of connection 1 %>");
+		return false;
+	}
+	else if (document.getElementById("cbid.wizard.1.pw").value=="" )
+	{
+		alert("<%:Please input the password of connection 1 %>");
+		return false;
+	}
+	else if ( document.getElementById("cbid.wizard.1.ctype").value=="double" )
+	{
+		if ( document.getElementById("cbid.wizard.1.username2").value=="" )
+		{
+			alert("<%:Please input the user name of connection 2 %>");
+			return false;
+		}
+		else if (document.getElementById("cbid.wizard.1.pw2").value=="" )
+		{
+			alert("<%:Please input the password of connection 2 %>");
+			return false;
+		}
+	}   
+		
+	return true;
+}
+
+
+function checkStep3()
+{
+	if ( document.getElementById("cbid.abc.1.SSID").value=="" )
+	{
+		alert("<%:Please input the SSID %>");
+		return false;
+	}
+	else if ( document.getElementById("cbid.abc.1.encrypt").value=="psk2" )
+	{
+		if ( document.getElementById("cbid.abc.1.pw").value=="" )
+		{
+			alert("<%:Please input password %>");
+			return false;
+		}
+	}   
+		
+	return true;
+}
+</script>
+<% if step == 1 then %>
+
+
+<form id="form1"  method="post" action="<%=REQUEST_URI%>?step=2&#38;from=1"  onsubmit="return checkStep1()">
+	<div>
+		<script type="text/javascript" src="/luci-static/resources/cbi.js"></script>
+		<input type="hidden" name="cbi.submit" value="1" />
+	</div>
+
+	<div class="cbi-map" id="cbi-wizard">
+
+		<h2><a id="content" name="content"><%:Wizard %></a></h2>
+		<div class="cbi-map-descr"><%:Please choose the connect type and configure the account. %></div>
+		<fieldset class="cbi-section">
+			
+			<div class="cbi-section-node" id="cbi-wizard-0x8328f30">
+				<div class="cbi-value" id="cbi-wizard-1-ctype"><label class="cbi-value-title" for="cbid.wizard.1.ctype"><%:Choose the connect type: %></label>
+		<div class="cbi-value-field">
+
+
+	<select class="cbi-input-select" onchange="cbi_d_update(this.id)" id="cbid.wizard.1.ctype" name="cbid.wizard.1.ctype" size="1">
+	<option id="cbi-wizard-1-ctype-single" value="single"  <% if ctype =='single' then %>selected='selected' <% end %> ><%:Single %></option>
+   <option id="cbi-wizard-1-ctype-double" value="double"  <% if ctype =='double' then %>selected='selected' <% end%> > <%:Double %></option>
+	</select>
+
+
+</div></div>
+
+
+
+
+
+			</div>
+
+			<br />
+		</fieldset><fieldset class="cbi-section">
+			<legend><%:Connection 1 %></legend>
+			<div class="cbi-section-node" id="cbi-wizard-0x832b2a0">
+				<div class="cbi-value" id="cbi-wizard-1-proto"><label class="cbi-value-title" for="cbid.wizard.1.proto"><%:Type %></label>
+		<div class="cbi-value-field">
+
+
+	<select class="cbi-input-select" onchange="cbi_d_update(this.id)" id="cbid.wizard.1.proto" name="cbid.wizard.1.proto" size="1">
+
+	<option id="cbi-wizard-1-proto-802.11" value="8021xdhcp" <% if proto =='8021xdhcp' then %>selected='selected' <% end %> ><%:802.1x+DHCP %></option>
+    <option id="cbi-wizard-1-proto-pppoe" value="pppoe"  <% if proto =='pppoe' then %>selected='selected' <% end %>   ><%:ADSL %></option>
+	</select>
+
+
+</div></div>
+
+<script type="text/javascript" id="cbip-wizard-1-proto">
+		cbi_d_add("cbi-wizard-1-proto", {"cbid.wizard.1.ctype":"single"}, "cbip-wizard-1-proto");cbi_d_add("cbi-wizard-1-proto", {"cbid.wizard.1.ctype":"double"}, "cbip-wizard-1-proto");
+	</script>
+
+
+<div class="cbi-value" id="cbi-wizard-1-username"><label class="cbi-value-title" for="cbid.wizard.1.username"><%:Username %></label>
+
+		<div class="cbi-value-field">
+
+	<input type="text" class="cbi-input-text" onchange="cbi_d_update(this.id)" name="cbid.wizard.1.username" id="cbid.wizard.1.username" value="<%=username%>" />
+	
+</div></div>
+
+<script type="text/javascript" id="cbip-wizard-1-username">
+		cbi_d_add("cbi-wizard-1-username", {"cbid.wizard.1.ctype":"single"}, "cbip-wizard-1-username");cbi_d_add("cbi-wizard-1-username", {"cbid.wizard.1.ctype":"double"}, "cbip-wizard-1-username");
+	</script>
+
+
+<div class="cbi-value" id="cbi-wizard-1-pw"><label class="cbi-value-title" for="cbid.wizard.1.pw"><%:Password %></label>
+		<div class="cbi-value-field">
+
+	<input type="password" class="cbi-input-password" onchange="cbi_d_update(this.id)" name="cbid.wizard.1.pw" id="cbid.wizard.1.pw" value="<%=pw%>" />
+	
+</div></div>
+
+<script type="text/javascript" id="cbip-wizard-1-pw">
+		cbi_d_add("cbi-wizard-1-pw", {"cbid.wizard.1.ctype":"single"}, "cbip-wizard-1-pw");cbi_d_add("cbi-wizard-1-pw", {"cbid.wizard.1.ctype":"double"}, "cbip-wizard-1-pw");
+	</script>
+
+
+
+			</div>
+			<br />
+
+		</fieldset>
+
+        <fieldset class="cbi-section" id="cbi-section-2" >
+
+			<legend><%:Connection 2 %></legend>
+			<div class="cbi-section-node" id="cbi-wizard-0x8329dd0">
+				<div class="cbi-value" id="cbi-wizard-1-proto2"><label class="cbi-value-title" for="cbid.wizard.1.proto2"><%:Type Type%></label>
+		<div class="cbi-value-field">
+
+
+	<select class="cbi-input-select" onchange="cbi_d_update(this.id)" id="cbid.wizard.1.proto2" name="cbid.wizard.1.proto2" size="1">
+	<option id="cbi-wizard-1-proto2-802.11" value="8021xdhcp"   <% if proto2 =='8021xdhcp' then %> selected='selected' <% end %> ><%:802.1x+DHCP %></option>
+<option id="cbi-wizard-1-proto2-pppoe" value="pppoe" <% if proto2 =='pppoe' then %>selected='selected' <% end %> ><%:ADSL %></option>
+
+	</select>
+
+
+</div></div>
+
+<script type="text/javascript" id="cbip-wizard-1-proto2">
+		cbi_d_add("cbi-wizard-1-proto2", {"cbid.wizard.1.ctype":"double"}, "cbip-wizard-1-proto2");
+	</script>
+
+
+<div class="cbi-value  " id="cbi-wizard-1-username2"><label class="cbi-value-title" for="cbid.wizard.1.username2"><%:Username %></label>
+		<div class="cbi-value-field">
+
+	<input type="text" class="cbi-input-text" onchange="cbi_d_update(this.id)" name="cbid.wizard.1.username2" id="cbid.wizard.1.username2" value="<%=username2%>" />
+	
+</div></div>
+
+<script type="text/javascript" id="cbip-wizard-1-username2">
+		cbi_d_add("cbi-wizard-1-username2", {"cbid.wizard.1.ctype":"double"}, "cbip-wizard-1-username2");
+	</script>
+
+
+<div class="cbi-value" id="cbi-wizard-1-pw2"><label class="cbi-value-title" for="cbid.wizard.1.pw2"><%:Password %></label>
+		<div class="cbi-value-field">
+
+	<input type="password" class="cbi-input-password" onchange="cbi_d_update(this.id)" name="cbid.wizard.1.pw2" id="cbid.wizard.1.pw2" value="<%=pw2%>" />
+
+	
+</div></div>
+
+<script type="text/javascript" id="cbip-wizard-1-pw2">
+		cbi_d_add("cbi-wizard-1-pw2", {"cbid.wizard.1.ctype":"double"}, "cbip-wizard-1-pw2");
+	</script>
+
+
+
+			</div>
+			<br />
+		</fieldset>
+<script type="text/javascript" id="cbip-section-2" >
+		cbi_d_add("cbi-section-2", {"cbid.wizard.1.ctype":"double"}, "cbip-section-2");
+</script>
+		<br />
+
+	</div>
+	
+
+	<div>
+
+		<input class="cbi-button-save" type="submit" value="<%:Next %>" name="submit" />
+
+
+		<input class="cbi-button-reset" type="reset" value="<%:Cancel %>" onclick="location.href='/' " />
+
+		<script type="text/javascript">cbi_d_update();</script>
+	</div>
+
+</form>
+
+<% elseif step == 2 then %>
+<form id="form2" method="post" action="<%=REQUEST_URI%>?step=3&#38;from=2">
+	<div>
+		<script type="text/javascript" src="/luci-static/resources/cbi.js"></script>
+		<input type="hidden" name="cbi.submit" value="1" />
+	</div>
+
+	<div class="cbi-map" id="cbi-abc">
+		<h2><a id="content" name="content"><%:Wizard %></a></h2>
+
+		<div class="cbi-map-descr"><%:Turn on the offline notification?  %></div>
+		<fieldset class="cbi-section">
+			
+			<div class="cbi-section-node" id="cbi-abc-0x9ac6b28">
+				<div class="cbi-value" id="cbi-abc-1-offlinenotify"><label class="cbi-value-title" for="cbid.abc.1.offlinenotify"><%:On %></label>
+		<div class="cbi-value-field">
+
+	<input class="cbi-input-checkbox" onclick="cbi_d_update(this.id)" onchange="cbi_d_update(this.id)" type="checkbox" id="cbid.abc.1.offlinenotify" name="cbid.abc.1.offlinenotify" <% if offlinenotify ~= "0" then %> checked='checked' <% end %> />
+
+</div></div>
+
+
+
+
+
+			</div>
+			<br />
+		</fieldset>
+		<br />
+	</div>
+	
+
+	<div>
+	    <input class="cbi-button-save" type="submit" value="<%:Next %>" /> 
+<% math.randomseed( os.time() ) %>
+		<input class="cbi-button-save" type="submit" value="<%:Previous %>" onclick="location.href='<%=REQUEST_URI%>?step=1&#38;token=<%=math.random(8808)%>'; return false" />
+
+
+		<input class="cbi-button-reset" type="reset" value="<%:Cancel %>"  onclick="location.href='/' " />
+
+		<script type="text/javascript">cbi_d_update();</script>
+	</div>
+</form>
+<% elseif step == 3 then %>
+
+<form id="form3" method="post" action="<%=REQUEST_URI%>?step=4&#38;from=3" onsubmit="return checkStep3()">
+	<div>
+		<script type="text/javascript" src="/luci-static/resources/cbi.js"></script>
+		<input type="hidden" name="cbi.submit" value="1" />
+	</div>
+
+	<div class="cbi-map" id="cbi-abc">
+		<h2><a id="content" name="content"><%:Wizard %></a></h2>
+
+		<div class="cbi-map-descr"><%:Wifi configuration %></div>
+		<fieldset class="cbi-section">
+			
+			<div class="cbi-section-node" id="cbi-abc-0x9a95d20">
+				<div class="cbi-value" id="cbi-abc-1-SSID"><label class="cbi-value-title" for="cbid.abc.1.SSID"><%:SSID %></label>
+		<div class="cbi-value-field">
+
+	<input type="text" class="cbi-input-text" onchange="cbi_d_update(this.id)" name="cbid.abc.1.SSID" id="cbid.abc.1.SSID" value="<%=ssid%>" />
+	
+</div></div>
+
+
+
+
+<div class="cbi-value" id="cbi-abc-1-encrypt"><label class="cbi-value-title" for="cbid.abc.1.encrypt"><%:Encryption %></label>
+		<div class="cbi-value-field">
+
+
+	<select class="cbi-input-select" onchange="cbi_d_update(this.id)" id="cbid.abc.1.encrypt" name="cbid.abc.1.encrypt" size="1">
+	<option id="cbi-abc-1-encrypt-yes" value="psk2" <% if  encryption~="none" then %>selected='selected' <% end %> ><%:Yes %></option>
+    <option id="cbi-abc-1-encrypt-no" value="none" <% if  encryption=='none' then %>selected='selected' <% end %> ><%:No %></option>
+	</select>
+
+
+</div></div>
+
+
+
+
+<div class="cbi-value" id="cbi-abc-1-pw"><label class="cbi-value-title" for="cbid.abc.1.pw"><%:Password %></label>
+		<div class="cbi-value-field">
+
+	<input type="password" class="cbi-input-password" onchange="cbi_d_update(this.id)" name="cbid.abc.1.pw" id="cbid.abc.1.pw" value="<%=wifipw%>" />
+	
+</div></div>
+
+<script type="text/javascript" id="cbip-abc-1-pw">
+		cbi_d_add("cbi-abc-1-pw", {"cbid.abc.1.encrypt":"psk2"}, "cbip-abc-1-pw");
+	</script>
+
+
+
+			</div>
+			<br />
+		</fieldset>
+		<br />
+	</div>
+
+	
+
+	<div>
+	    <input class="cbi-button-save" type="submit" value="<%:Finish %>" /> 
+		<input class="cbi-button-save" type="submit" value="<%:Previous %>" onclick="location.href='<%=REQUEST_URI%>?step=2&#38;token=<%=math.random(8808)%>'; return false" />
+
+
+		<input class="cbi-button-reset" type="reset" value="<%:Cancel %>" onclick="location.href='/' "  />
+
+		<script type="text/javascript">cbi_d_update();</script>
+	</div>
+</form>
+<% elseif step == 4 then %>
+<div class="cbi-map" id="cbi-abc">
+		<h2><a id="content" name="content"><%:Well done! %></a></h2>
+
+		<fieldset class="cbi-section">		
+			<div class="cbi-section-node" id="cbi-abc-0x9a95d20">
+				<div class="cbi-value" id="cbi-abc-1-SSID"><%:Configuration was finished, now XRouter can be put into use. %></div>
+		   </div>
+        </fieldset>
+</div>
+        
+<% end %>
+<%+footer%>
+
