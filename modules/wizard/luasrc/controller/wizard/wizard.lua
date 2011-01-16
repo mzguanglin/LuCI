@@ -11,7 +11,7 @@ Author      : Lin Xuan <dinosoft@qq.com>
 Created on  : Jan, 2010
 --]]
 
-module("luci.controller.wizard", package.seeall)
+module("luci.controller.wizard.wizard", package.seeall)
 
 function index()
 	entry({"wizard", "index", "index"}, call("wizard_controller"), "Wizard", 1).ignoreindex = true
